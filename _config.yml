@@ -2,11 +2,11 @@
 
 #google_analytics: UA-NNNNNNNN-N
 
-remote_theme: b2a3e8/jekyll-theme-console
+#remote_theme: b2a3e8/jekyll-theme-console
 
-header_pages:
-  - index.md
-  - about.md
+#header_pages:
+#  - index.md
+ # - about.md
 
 footer: '<a href="https://www.linkedin.com/in/chasemcd/">linkedin</a> <a href="https://github.com/chasemcd/">github</a>'
 
