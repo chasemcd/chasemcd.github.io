@@ -8,7 +8,7 @@ header_pages:
   - index.md
   - about.md
 
-footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
+footer: '<a href="https://www.linkedin.com/in/chasemcd/">linkedin</a> \t <a href="https://github.com/chasemcd/">github</a>'
 
 style: light # dark (default) or light
 
