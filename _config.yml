@@ -1,0 +1,18 @@
+title: 'Chase McDonald'
+description: "Chase McDonald"
+baseurl: "/jekyll-theme-console"
+url: "chasemcd.com"
+
+header_pages:
+  - index.md
+  - peter.md
+  - about.md
+  - contact.md
+
+style: light
+
+footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
+
+# Build settings
+markdown: kramdown
+remote_theme: b2a3e8/jekyll-theme-console
