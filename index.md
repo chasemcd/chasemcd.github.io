@@ -1,9 +1,9 @@
 ---
 title: /Chase McDonald
 layout: home
-permalink: /
+permalink: https://chasemcd.com/
 ---
 
-# Lorem ipsum
+# Bio
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+My name is Chase McDonald and I'm a 5th year undergraduate at UCLA. I study computational social science as part of a major I designed in the Individual Field of Concentration program. I am primarily interested in multi-agent systems and autonomous agent decision making. 
