@@ -1,7 +1,7 @@
 ---
 title: /Chase McDonald
 layout: home
-permalink: https://chasemcd.com/
+permalink: /
 ---
 
 # Bio
