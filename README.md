@@ -1,2 +1,1 @@
-# jekyll-theme-console demo
-This is a demo site for the jekyll-theme-console theme.
+This site uses the Jekyll theme "jekyll-theme-console" found here: https://github.com/b2a3e8/jekyll-theme-console.
