@@ -1,0 +1,15 @@
+/**
+ * Style variables
+ */
+$base-color:           #2606B4 !default;
+$primary-color:        #2606B4 !default;
+$text-color:           $base-color !default;
+$placeholder-color:    $base-color !default;
+$link-color:           $base-color !default;
+$border:               dashed 1px rgba(0,0,0,1) !default;
+$selection-background: rgba(0,0,0,0.99) !default;
+$selection-text:       #fff !default;
+$background-color:     #2606B4 !default;
+
+
+@import "base_blue";
