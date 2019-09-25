@@ -8,7 +8,7 @@ header_pages:
 
 style: dark
 
-footer: '<a href="https://github.com/chasemcd">github</a> <a href="https://linkedin.com/in/chasemcd">linkedin</a> <a href="https://github.com/chasemcd/chasemcd.github.io/raw/master/download/Chase_McDonald_Resume.pdf">resume</a>'
+footer: '<a href="https://github.com/chasemcd">github</a> <a href="https://linkedin.com/in/chasemcd">linkedin</a> <a href="https://drive.google.com/open?id=1IJD7tJ8A20BXFjw4AdsoBBjlq4m8Qf98">resume</a>'
 
 # Build settings
 markdown: kramdown
