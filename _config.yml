@@ -5,11 +5,19 @@ url: "chasemcd.com"
 
 header_pages:
   - index.md
+  - resume.md
 
-style: dark
+
+style: light
 
 footer: '<a href="https://github.com/chasemcd">github</a> <a href="https://linkedin.com/in/chasemcd">linkedin</a> <a href="https://drive.google.com/open?id=1IJD7tJ8A20BXFjw4AdsoBBjlq4m8Qf98">resume</a>'
 
 # Build settings
 markdown: kramdown
-remote_theme: b2a3e8/jekyll-theme-console
+#remote_theme: b2a3e8/jekyll-theme-console
+
+defaults:
+  - scope:
+      path: "assets/pdf"
+    values:
+      image: true
