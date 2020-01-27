@@ -1,7 +1,7 @@
 ---
-title: /resume
+title: /code
 layout: home
-permalink: download/Chase_McDonald_Resume.pdf
+permalink: https://www.github.com/chasemcd
 ---
 
-<a href="download/Chase_McDonald_Resume.pdf">resume</a>
+<a href="https://www.github.com/chasemcd">code</a>
