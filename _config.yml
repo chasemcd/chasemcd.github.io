@@ -5,9 +5,7 @@ url: "chasemcd.com"
 
 header_pages:
   - index.md
-  - title: /code
-    url: https://github.com/chasemcd
-  - cv.md
+  #- cv.md
 
 
 style: light
