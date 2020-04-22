@@ -5,8 +5,9 @@ permalink: /
 ---
 
 # Welcome
+<br/>
 
-My name is Chase McDonald and I am a Social and Decision Sciences PhD student at Carnegie Mellon University. <br/>
+My name is Chase McDonald and I am a Social and Decision Sciences PhD student at Carnegie Mellon University. 
 
 <br/>
 
