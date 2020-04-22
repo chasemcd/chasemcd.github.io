@@ -1,7 +1,7 @@
 ---
 title: projects
 layout: home
-permalink: ~/chasemcd/home
+permalink: projects
 ---
 
 # Projects coming soon!

@@ -1,7 +1,7 @@
 ---
 title: home
 layout: home
-permalink: ~/chasemcd/home
+permalink: home
 ---
 
 # Welcome
