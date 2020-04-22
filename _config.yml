@@ -4,8 +4,9 @@ description: "Chase McDonald"
 url: "chasemcd.com"
 
 header_pages:
-  - index.md
-  #- cv.md
+  - pages/index.md
+  - pages/projects.md
+# - pages/cv.md
 
 
 style: light
