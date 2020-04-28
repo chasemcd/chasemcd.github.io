@@ -4,11 +4,11 @@ layout: home
 permalink:
 ---
 <style type="text/css">
-.image-right {
+.image-left {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  float: left;
+  float: right;
 }
 </style>
 
