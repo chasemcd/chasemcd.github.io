@@ -4,7 +4,7 @@ layout: home
 permalink:
 ---
 <style type="text/css">
-.image-left {
+.image-right {
   display: block;
   margin-left: auto;
   margin-right: auto;
