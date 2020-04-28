@@ -8,7 +8,7 @@ permalink:
   display: block;
   margin-left: auto;
   margin-right: auto;
-  float: right;
+  float: left;
 }
 </style>
 
