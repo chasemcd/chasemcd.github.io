@@ -3,17 +3,22 @@ title: home
 layout: home
 permalink:
 ---
+
 <style type="text/css">
-.image-right {
+.image-left {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  float: left;
+  @include media($medium) {
+    float: left;
+    margin-right: $gutter;
+  }
 }
 </style>
 
 
-![portrait_circle](/images/portrait_circle.png){: .image-right }
+
+![portrait_circle](/images/portrait_circle.png){: .image-left }
 
 
 # Welcome!
@@ -23,4 +28,4 @@ My name is Chase McDonald and I am a [Social and Decision Sciences](https://www.
 
 <br/>
 
-I received my undergraduate degree from UCLA in Computational Social Science through an [Individual Field of Concentration major](http://www.honors.ucla.edu/other-programs/design-your-own-major/#). The degree culminated with a thesis that explored the emergence of inter- and intra-group norms under discrimination in mutli-agent reinforcement learning systems.  <br/>
+I received my undergraduate degree from UCLA in Computational Social Science through an [Individual Field of Concentration](http://www.honors.ucla.edu/other-programs/design-your-own-major/#) major. The degree culminated with a thesis that explored the emergence of inter- and intra-group norms under discrimination in mutli-agent reinforcement learning systems.  <br/>
