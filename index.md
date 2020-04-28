@@ -3,8 +3,17 @@ title: home
 layout: home
 permalink:
 ---
+<style type="text/css">
+.image-left {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+</style>
 
-![portrait_circle](/images/portrait_circle.png){: .center-image }
+
+![portrait_circle](/images/portrait_circle.png){: .image-left }
 
 
 # Welcome!
