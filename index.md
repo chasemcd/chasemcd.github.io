@@ -13,7 +13,7 @@ permalink:
 </style>
 
 
-![portrait_circle](/images/portrait_circle.png){: .image-left }
+![portrait_circle](/images/portrait_circle.png){: .image-right }
 
 
 # Welcome!
