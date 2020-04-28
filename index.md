@@ -4,7 +4,9 @@ layout: home
 permalink:
 ---
 
-![portrait_circle](images/portrait_circle){:class="img-responsive"}
+![portrait_circle](/images/portrait_circle.png)
+<img src="/images/portrait_circle.png" alt="">
+
 
 
 # Welcome!
