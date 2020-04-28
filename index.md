@@ -18,7 +18,7 @@ permalink:
 
 
 
-![portrait_circle](/images/portrait_circle_bw.png){: style="float: left" }
+![portrait_circle](/images/portrait_circle_bw.png){: style="float: left; margin-right: 1em;"}
 
 
 # Welcome!
