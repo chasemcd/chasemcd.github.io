@@ -4,9 +4,7 @@ layout: home
 permalink:
 ---
 
-![portrait_circle](/images/portrait_circle.png)
-<img src="/images/portrait_circle.png" alt="">
-
+![portrait_circle](/images/portrait_circle.png){: .center-image }
 
 
 # Welcome!
