@@ -4,22 +4,22 @@ layout: home
 permalink:
 ---
 <style type="text/css">
-.image-left {
+.image-right {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  float: right;
+  float: left;
 }
 </style>
 
 
-![portrait_circle](/images/portrait_circle.png){: .image-left }
+![portrait_circle](/images/portrait_circle.png){: .image-right }
 
 
 # Welcome!
 <br/>
 
-My name is Chase McDonald and I am a [Social and Decision Sciences](https://www.cmu.edu/dietrich/sds/) PhD student at Carnegie Mellon University. My primary focus is on multi-agent systems and the connections to artificial (social) intelligence, (social) cognition, and (social) decision-making. 
+My name is Chase McDonald and I am a [Social and Decision Sciences](https://www.cmu.edu/dietrich/sds/) PhD student at Carnegie Mellon University. My primary focus is on multi-agent systems and the connections to artificial (social) intelligence, (social) cognition, and (social) decision-making.
 
 <br/>
 
