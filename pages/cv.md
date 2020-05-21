@@ -1,6 +1,6 @@
 ---
 title: /cv
-layout: home
+layout: - home
 permalink: downloads/Chase_McDonald_Resume.pdf
 ---
 

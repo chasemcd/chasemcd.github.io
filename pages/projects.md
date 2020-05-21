@@ -1,6 +1,6 @@
 ---
 title: projects
-layout: home
+layout: - home
 permalink: projects
 ---
 
