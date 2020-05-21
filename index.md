@@ -1,7 +1,7 @@
 ---
-title: home
-layout: home
-permalink:
+#title: home
+layout: default
+#permalink:
 ---
 
 

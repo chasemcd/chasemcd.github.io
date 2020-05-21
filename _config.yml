@@ -1,6 +1,5 @@
-title: 'Chase McDonald'
-description: "Chase McDonald"
-#baseurl: "/jekyll-theme-console"
+title: Chase McDonald
+baseurl: ""
 url: "chasemcd.com"
 
 header_pages:

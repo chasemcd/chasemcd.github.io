@@ -1,7 +1,7 @@
 ---
-title: projects
-layout: - home
-permalink: projects
+#title: projects
+layout: default
+#permalink: projects
 ---
 
 # Projects coming soon!
