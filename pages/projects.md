@@ -1,5 +1,5 @@
 ---
-#title: projects
+title: projects
 layout: default
 #permalink: projects
 ---
