@@ -1,5 +1,5 @@
 ---
-title:
+title: home
 layout: default
 #permalink:
 ---
