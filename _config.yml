@@ -10,7 +10,7 @@ url: "chasemcd.com"
 
 style: light
 
-footer: '<a href="https://linkedin.com/in/chasemcd">linkedin</a> <a href="https://github.com/chasemcd">github</a>'
+header: '<a href="https://linkedin.com/in/chasemcd">linkedin</a> <a href="https://github.com/chasemcd">github</a>'
 
 # Build settings
 markdown: kramdown
