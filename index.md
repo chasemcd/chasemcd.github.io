@@ -13,7 +13,7 @@ layout: default
 ![portrait_circle](/images/portrait_circle.png){: style="float: right; margin-left: 1em;"}
 
 
-My name is Chase McDonald and I am a PhD student in [Cognitive Decision Science](https://www.cmu.edu/dietrich/sds/) at Carnegie Mellon University. My primary focus is on both empirical and simulated multi-agent systems and their connections to artificial (social) intelligence, (social) cognition, and (social) decision-making.
+My name is Chase McDonald and I am a PhD student in [Cognitive Decision Science](https://www.cmu.edu/dietrich/sds/) at Carnegie Mellon University. My research focuses on both empirical and simulated multi-agent systems and their connections to artificial intelligence, cognitive science, and decision-making.
 
 <br/>
 
