@@ -2,9 +2,9 @@ title: Chase McDonald/
 #baseurl: ""
 url: "chasemcd.com"
 
-header_pages:
-  - index.md
-  - pages/projects.md
+#header_pages:
+#  - index.md
+#  - pages/projects.md
 # - pages/cv.md
 
 
