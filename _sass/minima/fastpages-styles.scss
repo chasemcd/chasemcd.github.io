@@ -1,0 +1,393 @@
+//Default Overrides For Styles In Minima 
+// If you wish to override any of this CSS, do so in _sass/minima/custom-styles.css
+
+.post img {
+        display: block;
+        // border:1px solid #021a40;
+        vertical-align: top;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+img.emoji{
+      display: inline !important;
+      vertical-align: baseline !important;
+}
+
+.post figcaption {
+  text-align: center;
+  font-size: .8rem;
+  font-style: italic;
+  color: light-grey;
+}
+
+.page-content {
+        -webkit-font-smoothing: antialiased !important;
+        text-rendering: optimizeLegibility !important;
+        font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important;
+}
+
+// make non-headings slightly lighter
+.post-content p, .post-content li {
+   font-size: 18px;
+   color: #515151;
+}
+
+.post-link{
+    font-weight: normal;
+}
+
+// change padding of headings
+h1 {
+    margin-top:2.5rem !important;
+}
+
+h2 {
+    margin-top:2rem !important;      
+}
+
+h3, h4 {
+    margin-top:1.5rem !important;      
+}
+
+p {
+    margin-top:1rem !important; 
+    margin-bottom:1rem !important;   
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal !important;
+    margin-bottom:0.5rem !important;  
+    code {
+      font-size: 100%;
+    }
+}
+
+pre {
+    margin-bottom:1.5rem !important; 
+}
+
+// make sure the post title doesn't have too much spacing
+.post-title { margin-top: .5rem !important; }
+
+li {
+  h3, h4 {
+  margin-top:.05rem !important;
+  margin-bottom:.05rem !important;
+  }
+  .post-meta-description {
+    color: rgb(88, 88, 88);
+    font-size: 15px;
+    margin-top:.05rem !important;
+    margin-bottom:.05rem !important;
+  }
+}
+
+
+
+//  Code Folding
+ details.description[open] summary::after {
+  content: attr(data-open);
+}
+
+details.description:not([open]) summary::after {
+  content: attr(data-close);
+}
+
+// Notebook badges
+.notebook-badge-image {
+  border:0 !important;
+}
+
+// Adjust font size for footnotes.
+.footnotes {
+  font-size: 12px !important;
+  p, li{
+    font-size: 12px !important;
+ } 
+}
+
+// Adjust with of social media icons were getting cut off
+.social-media-list{
+  .svg-icon {
+    width: 25px !important;
+    height: 23px !important;
+  }
+}
+
+// Make Anchor Links Appear Only on Hover
+
+.anchor-link {
+  opacity: 0;
+  padding-left: 0.375em;
+  \-webkit-text-stroke: 1.75px white;
+  \-webkit-transition: opacity 0.2s ease-in-out 0.1s;
+  \-moz-transition: opacity 0.2s ease-in-out 0.1s;
+  \-ms-transition: opacity 0.2s ease-in-out 0.1s;
+}
+
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  opacity: 1;
+}
+
+
+// category tags
+.category-tags {
+  margin-top: .25rem !important;
+  margin-bottom: .25rem !important;
+  font-size: 105%;
+}
+
+// Custom styling for homepage post previews
+.post-meta-title, .post-meta{
+  margin-top: .25em !important;
+  margin-bottom: .25em !important;
+  font-size: 105%;
+}
+
+.page-description {
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
+  color: #585858;
+  font-size: 115%;
+}
+
+// Custom styling for category tags
+.category-tags-icon {
+  font-size: 75% !important;
+  padding-left: 0.375em;
+  opacity: 35%;
+}
+.category-tags-link {
+  color:rgb(187, 129, 129) !important;
+  font-size: 13px !important;
+}
+
+// Search Page Styles
+.js-search-results {padding-top: 0.2rem;}
+.search-results-list-item {padding-bottom: 1rem;}
+.search-results-list-item .search-result-title {
+  font-size: 16px;
+  color: #d9230f;
+}
+.search-result-rel-url {color: silver;}
+.search-results-list-item a {display: block; color: #777;}
+.search-results-list-item a:hover, .search-results-list-item a:focus {text-decoration: none;}
+.search-results-list-item a:hover .search-result-title {text-decoration: underline;}
+
+.search-result-rel-date {
+  color: rgb(109, 120, 138);
+  font-size: 14px;
+}
+
+.search-result-preview {
+  color: #777;
+  font-size: 16px;
+  margin-top:.02rem !important;
+  margin-bottom:.02rem !important;
+}
+.search-result-highlight {
+  color: #2e0137;
+  font-weight:bold;
+}
+
+// Handle Overflow With Table Output
+
+table {
+  // display: block !important;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 75%;
+  border:none;
+  th{
+    text-align: center! important;
+  }
+  td{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    max-width: 15em;
+  }
+}
+
+// customize scrollbars
+::-webkit-scrollbar {
+  width: 14px;
+  height: 18px;
+}
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  -webkit-border-radius: 7px;
+  background-color: #9D9D9D;
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+// Wrap text outputs instead of horizontal scroll
+.output_text.output_execute_result {
+  pre{
+    white-space: pre-wrap;
+  }
+}
+
+
+// // Handling large charts on mobile devices
+// @media only screen and (max-width: 900px) {
+//   /* for mobile phone and tablet devices */
+//   .output_wrapper{
+//     overflow: scroll;
+//   }
+// }
+
+.svg-icon.orange{
+  width: 30px;
+  height: 23px;
+} 
+// .output_wrapper {
+//   // display: flex; /* or inline-flex */
+//   // flex-direction: row;
+//   // flex-wrap: wrap;
+//   position: absolute;
+//   margin: 0 auto;
+// }
+// .output {
+//   // display: flex;
+//   // flex-grow: 1; /* default 0 */
+//   max-width: 100%;
+//   position: absolute;
+//   // width: 50%;
+//   /* height: 400px; */
+//   /* max-height: 100%; */
+// }
+// .output_area {
+//   // display: flex;
+//   // flex-grow: 1; /* default 0 */
+//   max-width: 100%;
+//   position: absolute;
+//   // width: 680px;
+//   // margin: 0 auto;
+//   /* height: 400px; */
+//   /* max-height: 100%; */
+// }
+// .output_html {
+//   // display: flex;
+//   // flex-grow: 1; /* default 0 */
+//   // max-width: 100%;
+//   // width: 680px;
+//   position: absolute;
+//   // left: 0;
+//   margin: 0 auto;
+//   /* height: 400px; */
+//   /* max-height: 100%; */
+// }
+// canvas {
+//   // width: auto !important;
+//   padding-left: 0;
+//   padding-right: 0;
+//   margin-left: auto;
+//   margin-right: auto;
+//   display: block;
+//   max-width: 100%;
+//   // width: 800px;
+// }
+/////////////////////////////////////////////WORKS///////////////////////
+// .output_wrapper {
+//   margin: 0 -200px;
+//   width: calc(100% + 400px);
+
+// }
+// .output{
+//   display: table;
+//   // margin: 0 -200px;
+//   // display: inline-block;
+//   margin: 0 auto;
+//   width: fit-content;
+// }
+/////////////////////////////////////////////Till HERE For ABOVE///////////////////////
+
+// .output_area{
+//   // margin: 0 -200px;
+//   // display: inline-block;
+//   margin: 0 auto;
+//   width: fit-content;
+// }
+// .output_html{
+//   // margin: 0 -200px;
+//   // display: inline-block;
+//   display: table;
+//   margin: 0 auto;
+//   // width: fit-content;
+// }
+
+/////////////////////////////////////////////////////WORKS AS WELL//////////////////
+// .output_wrapper{
+//   margin: 0 -200px;
+//   width: calc(100% + 400px);
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-items: center;
+//   // overflow: scroll; //It adds those bad rectangular scroll stuff that doesn't actually scroll
+// }
+/////////////////////////////////////////////////////ONLY THIS BLOCK NEEDED//////////////////
+
+.output_wrapper table {
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+}
+
+.code_cell {
+  margin: 1.5rem 0px !important;
+}
+
+pre code {
+  font-size: 15px !important;
+}
+
+.output_wrapper .vega-embed {
+  // margin: 0 -200px;
+  width: calc(100% + 400px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  // overflow: scroll; //It adds those bad rectangular scroll stuff that doesn't actually scroll
+}
+
+// CSS class to use for keeping images side by side
+.side-images {
+  // margin: 0 -200px;
+  width: calc(100% + 400px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+// When the action widget is ON this css helps in keeping the images centered
+.vega-embed .chart-wrapper {
+  width: auto;
+  height: 100%;
+}
