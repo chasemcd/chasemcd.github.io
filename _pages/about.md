@@ -1,18 +1,24 @@
 ---
-layout: page
-title: About Me
-permalink: /about/
+layout: about
+title: about
+permalink: /
+description:  <tt>     chasemcd [at] cmu [dot] edu </tt>
+
+profile:
+  align: right
+  image: portrait_circle.png
+  address: # address
+
+news: true  # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
 ---
-Hi :wave:  
 
-My name is **Shantam**. This blog will contain my attempts to replicate/emulate the visualizations at large media houses, related to COVID-19 pandemic, using open source data & tools.
 
-I am a driven **python** developer and **data scientist**. I have worked with **Machine Learning** and **Big Data** too. Did I tell you I am a published **poet** too?  
+My name is Chase McDonald and I am a PhD student in Cognitive Decision Science at Carnegie Mellon University. My research focuses on both empirical and simulated multi-agent systems and their connections to artificial intelligence, cognitive science, and decision-making. In particular, I am interested in cooperative artificial intelligence and the design of autonomous systems that can work with and improve the experience humans. My research involves analyzing datasets of human decision-making, cognitive modeling, and reinforcement learning.
 
-I am available for **consulting**, **collaborations**, **part time** or **full time** jobs. Let me know if you want to talk.
+<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-If you want me to try a specific visualization, do let me know by raising an issue in the [GitHub Repository](https://github.com/armsp/covidviz).
+Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-My website - [www.shantamraj.com](https://www.shantamraj.com)
-
-I am working on a project that you should definitely check out - [COVID-19 Stories](https://storiescovid.in)
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
