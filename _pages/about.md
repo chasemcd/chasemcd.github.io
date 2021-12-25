@@ -15,7 +15,7 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 
-My name is Chase McDonald and I am a PhD student in Cognitive Decision Science at Carnegie Mellon University. My research focuses on both empirical and simulated multi-agent systems and their connections to artificial intelligence, cognitive science, and decision-making. In particular, I am interested in cooperative artificial intelligence and the design of autonomous systems that can work with and improve the experience humans. My research involves analyzing datasets of human decision-making, cognitive modeling, and reinforcement learning.
+My name is Chase McDonald and I am a PhD student in Cognitive Decision Science at Carnegie Mellon University. My research focuses on both empirical and simulated multi-agent systems and their connections to artificial intelligence and cognitive science. In particular, I am interested in cooperative artificial intelligence and the design of human-compatible autonomous systems. In my current work, I aim to use insights about human behavior to inform the development of such systems.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
