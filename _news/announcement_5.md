@@ -5,4 +5,4 @@ inline: true
 ---
 
 Joined [Riot Games](https://www.riotgames.com/) as a summer intern, where I will work
-on reinforcement learning in the AI Accelerator, Riot's AI and machine learning applied research group. </a>.
+on reinforcement learning in the AI Accelerator, Riot's AI and machine learning applied research group.
