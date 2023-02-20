@@ -15,7 +15,9 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 
-My name is Chase McDonald and I'm a student at Carnegie Mellon University. I am pursuing a [Ph.D. in Cognitive Decision Science](https://www.cmu.edu/dietrich/sds/graduate/index.html) and previously received an [M.S. in Machine Learning](https://www.ml.cmu.edu/). I am interested in cooperative artificial intelligence and the design of human-compatible autonomous systems. In my work, I ask how we can design AI to complement human decision-making and improve human experiences.
+I'm a student at Carnegie Mellon University currently pursuing a [Ph.D. in Cognitive Decision Science](https://www.cmu.edu/dietrich/sds/graduate/index.html). In December 2022, I received an [M.S. in Machine Learning](https://www.ml.cmu.edu/) and before that a degree in Computational Social Science (through the [individual major program](https://www.honors.ucla.edu/other-programs/design-your-own-major/)) from UCLA. I am interested in cooperative artificial intelligence and the design of human-compatible autonomous systems. In my work, I ask how we can design AI to complement human decision-making and improve human experiences.
+
+In tandem with my graduate studies, I am a member of Riot Games' Game AI team, where I conduct applied research in multi-agent (deep) reinforcement learning. 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
