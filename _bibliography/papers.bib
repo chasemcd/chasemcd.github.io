@@ -1,8 +1,76 @@
 ---
 ---
 
+
+
+
+
+
+@article{MCDONALD_COGRID_IG,
+  abbr={in revision},
+  title={CoGrid and Interactive Gym: A Framework for Multi-Agent Experimentation},
+  author={McDonald, C. and Gonzalez, C.},
+  abstract={The increasing integration of artificial intelligence (AI) into daily life highlights the importance of studying human interaction with autonomous agents. While much of the existing research focuses on the training of highly skilled agents, there is a need to understand how these agents behave in multi-agent contexts, particularly in their interaction with humans. This paper introduces a framework with two tools to support research on human-AI interaction: COGRID and INTERACTIVE GYM. COGRID is a library that extends an existent Minigrid library for multi-agent simulations and generalizes it for easy customizability. INTERACTIVE GYM uses simulation environments that follow the existing Gymnasium or PettingZoo APIs and translates them directly into interactive experiments in a web browser. Both tools are open-sourced and available to the broader research community, with documentation and source code available at \{cogrid, interactive-gym\}.readthedocs.io. This paper details the functionality of these tools and presents several case studies to illustrate their utility in Human-AI multi-agent experimentation.
+},
+  journal={In revision.},
+  selected={true}
+}
+
+
+@article{GANDHI_BTE,
+  abbr={preprint},
+  title={Beliefs that Entertain},
+  author={Gandhi, A. and Giuliano, P. and Guan, E. and Keefer, Q. and McDonald, C. and Pagel, M. and Tasoff, J.},
+  abstract={Economic research on entertainment is scant despite its large share of time use. We test economic theories of belief-based utility in the context of video-game engagement. Using data on 2.8 million matches from League of Legends, we find evidence supporting reference-dependent preferences, loss aversion, preferences for surprise and suspense, preferences for clumped surprise, and flow theory from psychology. We then leverage our estimated model and an evolutionary algorithm to find the information-revealing process that maximizes player engagement. We find that the optimal version of the game has increased game play equivalent to 43% of the winner-loser gap.
+},
+  journal={National Bureau of Economic Research},
+  selected={true}
+}
+
+
+@article{MCDONALD_CI,
+  abbr={in review},
+  title={Exploring the Effects of Collective Intelligence Awareness in Real-Time Team Decision Making},
+  author={McDonald, C. and Nguyen, T. N. and Botelho, C. and Dishop, C. and Woolley, A. and Gonzalez, C.},
+  abstract={A growing body of research highlights the importance of collective intelligence in determining team success. Recent studies have explored the effectiveness of real-time collaborative process metrics to measure and predict collective intelligence as teams collaborate, offering potential avenues to improve team performance through targeted interventions. This research presents two experiments in which teams collaborated on an online search and rescue task, with some teams exposed to real-time displays of their collaborative process metrics. Contrary to expectations, our results do not uniformly support the notion that providing a real-time display of collaborative process metrics reliably improves team performance. Instead, we observed instances in which teams altered their behavior to optimize a particular metric, negatively impacting other processes and long-term performance. These results prompt a critical examination of the implications for designing digital nudges as real-time interventions aimed at improving collaborative processes and collective intelligence in teams.},
+  journal={Collective Intelligence},
+  selected={true}
+}
+
+@article{NGUYEN23_CA,
+  abbr={aaai},
+  title={Credit Assignment: Challenges and Insights to Develop Human-like AI Systems},
+  author={Nguyen, T. N. and McDonald, C. and Gonzalez, C.},
+  abstract={Temporal credit assignment is the process of linking delayed outcomes to specific actions in a sequence, crucial for learning and decision-making in dynamic settings. While computational methods in reinforcement learning, such as temporal difference (TD), address this issue, it remains unclear if these mechanisms align with how humans handle feedback delays. Cognitive science has yet to fully explore the credit assignment problem in humans and cognitive models. This study employs a cognitive model based on Instance-Based Learning Theory (IBLT) to examine mechanisms like equal credit, exponential credit, and TD credit in a goal-seeking navigation task with feedback delays and varying decision complexity. Comparing models with human behavior in two experiments, we find that no single mechanism fully explains human learning. Equal credit assignment aligns more closely with humans initially, while TD models start slower but surpass human accuracy over time. Decision complexity affects humans but not models. Notably, TD models exhibit initial over-exploration, while humans under-explore and tend to engage with distractors early on. These findings underscore the challenges and opportunities in developing learning agents that emulate human decision-making by incorporating human-like tendencies in handling delayed feedback under various decision complexities.},
+  journal={Proceeding of the 2024 {AAAI} Spring Symposium on Human-Like Learning},
+  numpages={0},
+  year={2024},
+  month={February},
+  selected={true}
+}
+
+
+@article{MCDONALD23_LLMINSTRUCTIONS,
+  abbr={aaai},
+  title={Exploring the Path from Instructions to Rewards with Large Language Models in Instance-Based Learning},
+  author={McDonald, C. and Malloy, T. and Nguyen, T. N. and Gonzalez, C.},
+  abstract={A prominent method to model human learning is through experiential learning, where decisions are influenced by the outcomes observed in previous actions. The decisions-from- experience approach often excludes other forms of learning in humans, such as learning from descriptive information. In humans, descriptive information can enhance learning by pro- viding a denser signal, achieved through understanding the relationship between intermediate decisions and their future outcomes, instead of relying solely on observed outcomes. To account for experiential and descriptive information, we propose the use of large language models (LLMs) to convert descriptive information into dense signals that can be used by computational models that learn from experience. Building on past work in cognitive modeling, we utilize task instruc- tions and prompt an LLM to define and quantify the critical actions an agent must take to succeed in the task. In an initial experiment, we test this approach using an Instance-Based Learning cognitive model of experiential decisions in a grid- world task. We demonstrate how the LLM can be prompted to provide a series of actions and relative values given the task instructions, then show how these values can be used in place of sparse outcome signals to improve the model’s learning of the task significantly.},
+  journal={Proceedings of the 2023 {AAAI} Fall Symposium on Integrating Cognitive Architectures and Generative Models},
+  numpages={0},
+  year={2023},
+  month={October},
+  selected={true}
+}
+
+
+
+
+
+
+
+
 @article{MCDONALD21_DIVERSITY,
-  abbr={ICCM},
+  abbr={iccm},
   title={Diverse Experience Leads to Improved Adaptation: An experiment with a cognitive model of learning},
   author={McDonald, C. and Bugbee, E. and McCormick, E. and Fiechter, J. and Blaha, L and Lebiere, C. and Gonzalez, C.},
   abstract={In dynamic decision tasks, the situations we confront are never the same: the world is constantly changing. Generally, our ability to generalize learned skills depends on the similarity between the learned skills and the situations in which we will apply those skills. However, in dynamic tasks, the situations we are trained in will most likely be different from the situations in which we need to apply skills. For example, in the face of emergencies, one could be trained to handle hypothetical disaster scenarios, but remain unprepared for the emergency that is actually experienced. This raises an important question: how can we best prepare for the unexpected? Cognitive science research suggests that heterogeneity during training helps people adapt to unexpected situations. However, evidence for a general diversity hypothesis is limited. In this research, we investigate this Diversity Hypothesis using a cognitive model of learning and decisions from experience based on Instance-Based Learning (IBL) Theory. We focus on the concept of decision complexity to investigate whether confronting decisions of diverse complexities results in improved adaptation to unexpected decision complexities, compared to situations of constant decision complexity. We conduct a simulation experiment using an IBL model in a Gridworld task, and expose agents to various degrees of diversity as they learn; we then observe how these agents transfer their acquired knowledge to a situation of novel decision complexity. Our results support the Diversity Hypothesis and the benefits of diversity on adaptation.},
