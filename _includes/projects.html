@@ -1,42 +1,29 @@
 <div class="grid-item">
-  {% if project.redirect %}
-  <a href="{{ project.redirect }}">
-  {% else %}
-  <a href="{{ project.url | relative_url }}">
-  {% endif %}
-    <div class="card hoverable">
-      {% if project.img %}
-        {% include figure.html 
-          path=project.img 
-          alt="project thumbnail" %}
-      {% endif %}
-      <div class="card-body">
-        <h2 class="card-title">{{ project.title }}</h2>
-        <p class="card-text">{{ project.description }}</p>
-        <div class="row ml-1 mr-1 p-0">
-          {% if project.github %}
-          <div class="github-icon">
-            <div class="icon" data-toggle="tooltip" title="Code Repository">
-              <a href="{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
-            </div>
-          </div>
-          {% endif %}
-          {% if project.github_stars %}
-          <div class="ml-1">
-            <a href="{{ project.github }}/stargazers">
-              <img src="https://img.shields.io/github/stars/{{ project.github_stars }}?style=social" alt="GitHub Stars">
-            </a>
-          </div>
-          {% endif %}
-          {% if project.pypi %}
-          <div class="ml-1">
-            <a href="https://pypi.org/project/{{ project.pypi }}">
-              <img src="https://img.shields.io/pypi/dm/{{ project.pypi }}.svg?label=PyPI" alt="PyPI Downloads">
-            </a>
-          </div>
-          {% endif %}
-        </div>
+  <div class="card hoverable">
+    {% if project.img %}
+      {% include figure.html
+        path=project.img
+        alt="project thumbnail" %}
+    {% endif %}
+    <div class="card-body">
+      <h2 class="card-title">
+        {% if project.github %}
+          <a href="{{ project.github }}">{{ project.title }} <i class="fab fa-github"></i></a>
+        {% else %}
+          {{ project.title }}
+        {% endif %}
+      </h2>
+      <p class="card-text">{{ project.description }}</p>
+      {% if project.github_stars or project.pypi %}
+      <div class="project-badges">
+        {% if project.github_stars %}
+          <img src="https://img.shields.io/github/stars/{{ project.github_stars }}?style=flat-square&logo=github&label=stars" alt="GitHub Stars">
+        {% endif %}
+        {% if project.pypi %}
+          <img src="https://img.shields.io/pypi/dm/{{ project.pypi }}.svg?style=flat-square&logo=pypi&logoColor=white&label=downloads" alt="PyPI Downloads">
+        {% endif %}
       </div>
+      {% endif %}
     </div>
-  </a>
+  </div>
 </div>

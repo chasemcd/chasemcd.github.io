@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:cogrid.readthedocs.io)",
+      "WebFetch(domain:multi-user-gymnasium.readthedocs.io)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:pypi.org)"
+    ]
+  }
+}

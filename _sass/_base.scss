@@ -349,6 +349,25 @@ footer.sticky-bottom {
     }
     .card-title {
       color: var(--global-text-color);
+
+      a {
+        color: var(--global-text-color);
+        text-decoration: none;
+
+        .fa-github {
+          font-size: 0.7em;
+          vertical-align: middle;
+          opacity: 0.6;
+        }
+
+        &:hover {
+          color: var(--global-theme-color);
+
+          .fa-github {
+            opacity: 1;
+          }
+        }
+      }
     }
     .card-text {
       color: var(--global-text-color);
@@ -357,6 +376,18 @@ footer.sticky-bottom {
       display: flex;
       flex-direction: column;
       height: 100%;
+    }
+    .project-badges {
+      margin-top: auto;
+      padding-top: 0.5rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+
+      img {
+        height: 20px;
+        width: auto;
+      }
     }
   }
 
