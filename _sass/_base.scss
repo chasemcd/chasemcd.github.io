@@ -342,11 +342,21 @@ footer.sticky-bottom {
   }
 
   .card {
+    background-color: var(--global-bg-color);
+    border-color: var(--global-divider-color);
     img {
       width: 100%;
     }
     .card-title {
-      color: $black-color;
+      color: var(--global-text-color);
+    }
+    .card-text {
+      color: var(--global-text-color);
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
   }
 
@@ -363,6 +373,21 @@ footer.sticky-bottom {
   .grid-item {
     width: 250px;
     margin-bottom: 10px;
+
+    .card {
+      height: 100%;
+    }
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .grid-item {
+      flex: 1 1 0;
+      min-width: 200px;
+    }
   }
 
   h2.category {
