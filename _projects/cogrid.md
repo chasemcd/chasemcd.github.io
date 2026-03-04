@@ -3,6 +3,8 @@ layout: page
 title: CoGrid
 description: A multi-agent grid-world research framework with NumPy and JAX backends.
 github: https://github.com/chasemcd/cogrid
+github_stars: chasemcd/cogrid
+pypi: cogrid
 importance: 1
 ---
 
