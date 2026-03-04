@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description:  <tt>     ChaseCMcDonald [at] gmail [dot] com </tt>
+description:  <tt>     chase c mcdonald [at] gmail [dot] com </tt>
 
 profile:
   align: right
