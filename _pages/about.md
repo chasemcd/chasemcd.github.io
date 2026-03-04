@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description:  <tt>     chasemcd [at] cmu [dot] edu </tt>
+description:  <tt>     ChaseCMcDonald [at] gmail [dot] com </tt>
 
 profile:
   align: right
