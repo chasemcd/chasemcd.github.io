@@ -373,7 +373,7 @@ footer.sticky-bottom {
     .card-body {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      flex: 1;
     }
     .card-footer-row {
       margin-top: auto;
@@ -424,6 +424,8 @@ footer.sticky-bottom {
 
     .card {
       height: 100%;
+      display: flex;
+      flex-direction: column;
     }
   }
 
