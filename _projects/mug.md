@@ -9,6 +9,8 @@ pypi: multi-user-gymnasium
 importance: 2
 ---
 
+
+
 **tl;dr** Multi-User Gymnasium (MUG) converts standard Gymnasium and PettingZoo environments into browser-based experiments, running Python-based environments directly in the browser and handling participant networking and AI inference. Core functionality includes:
 
 - Execution of pure-Python Gymnasium or PettingZoo environments directly in the browser via Pyodide with automatic data collection. Server-client architecture is available for non-pure-Python environments.
@@ -31,7 +33,26 @@ Excited by this functionality---but frightened at the prospect of reimplementati
 
 After much trial-and-error in getting the setup correct and fully built out, MUG ended up being a platform with functionality well beyond its original purpose. 
 
-- Execution of pure-Python Gymnasium or PettingZoo environments directly in the browser via Pyodide with automatic data collection. Server-client architecture is available for non-pure-Python environments.
-- Multi-player matchmaking and experiments with generalized rollback netcode (GGPO) to account for network latency. 
-- Full experiment flow with participant exclusion criteria, completion codes, static pages, surveys, and more. 
+#### Gymnasium in the Browser
+
+The key innovation of MUG is the ability to run pure-Python environments in the browser, rather than relying on either a separate implementation or a server-client communication loop. This allows for true parity between the environments that are run for AI training and those that human participants interact with, while side-stepping latency issues that would otherwise be introduced by network communication.
+
+Users simply define how their Gymnasium- or PettingZoo-compatible environment should be initialized and rendered, and MUG handles the rest. Users provide initialization code and implement `render_mode="mug"` to render the environment in the browser:
+
+```python
+class MyEnv(pettingzoo.ParallelEnv):
+    def render(self):
+        assert self.render_mode == "mug"
+
+        canvas = mug. 
+
+env = MyEnv(render_mode="mug")
+```
+
+#### Multi-Player Functionality & Latency Handling
+Multi-player matchmaking and experiments with generalized rollback netcode (GGPO) to account for network latency. 
+
+
+### Experiment Flow
+Full experiment flow with participant exclusion criteria, completion codes, static pages, surveys, and more. 
 
