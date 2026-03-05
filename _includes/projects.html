@@ -2,9 +2,9 @@
   <a href="{{ project.url | relative_url }}">
     <div class="card hoverable">
       {% if project.img %}
-        {% include figure.html
-          path=project.img
-          alt="project thumbnail" %}
+      <div class="project-img-container">
+        <img src="{{ project.img | relative_url }}" alt="project thumbnail">
+      </div>
       {% endif %}
       <div class="card-body">
         <h2 class="card-title">{{ project.title }}</h2>
