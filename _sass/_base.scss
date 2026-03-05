@@ -349,6 +349,8 @@ footer.sticky-bottom {
     }
     .project-img-container {
       height: 200px;
+      min-height: 200px;
+      max-height: 200px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -357,6 +359,7 @@ footer.sticky-bottom {
 
       img {
         max-height: 100%;
+        max-width: 100%;
         width: auto;
         object-fit: contain;
       }
