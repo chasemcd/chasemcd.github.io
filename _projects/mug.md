@@ -31,7 +31,7 @@ Excited by this functionality---but frightened at the prospect of reimplementati
 
 After much trial-and-error in getting the setup correct and fully built out, MUG ended up being a platform with functionality well beyond its original purpose. 
 
+- Execution of pure-Python Gymnasium or PettingZoo environments directly in the browser via Pyodide with automatic data collection. Server-client architecture is available for non-pure-Python environments.
+- Multi-player matchmaking and experiments with generalized rollback netcode (GGPO) to account for network latency. 
+- Full experiment flow with participant exclusion criteria, completion codes, static pages, surveys, and more. 
 
-
-
-### GGPO
