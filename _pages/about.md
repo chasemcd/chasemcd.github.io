@@ -16,7 +16,7 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 
-I am a Senior Research Scientist at Riot Games, where I conduct research into multi-agent reinforcement learning and applied AI. Previously, I received my Ph.D. from Carnegie Mellon University pursuing a [Ph.D. in Cognitive Decision Science](https://www.cmu.edu/dietrich/sds/graduate/index.html). In December 2022, I also received an [M.S. in Machine Learning](https://www.ml.cmu.edu/) and before that a B.A. in Computational Social Science (through the [individual major program](https://www.honors.ucla.edu/other-programs/design-your-own-major/)) from UCLA. In my work, I ask how we can design AI to complement human decision-making and improve human experiences.
+I am a Senior Research Scientist at Riot Games, where I conduct research into multi-agent reinforcement learning and applied AI. Previously, I received my Ph.D. from Carnegie Mellon University in [Cognitive Decision Science](https://www.cmu.edu/dietrich/sds/graduate/index.html). In December 2022, I also received an [M.S. in Machine Learning](https://www.ml.cmu.edu/) and before that a B.A. in Computational Social Science (through the [individual major program](https://www.honors.ucla.edu/other-programs/design-your-own-major/)) from UCLA. In my work, I ask how we can design AI to complement human decision-making and improve human experiences.
 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.

@@ -1,29 +1,32 @@
 <div class="grid-item">
-  <div class="card hoverable">
-    {% if project.img %}
-      {% include figure.html
-        path=project.img
-        alt="project thumbnail" %}
-    {% endif %}
-    <div class="card-body">
-      <h2 class="card-title">
-        {% if project.github %}
-          <a href="{{ project.github }}">{{ project.title }} <i class="fab fa-github"></i></a>
-        {% else %}
-          {{ project.title }}
-        {% endif %}
-      </h2>
-      <p class="card-text">{{ project.description }}</p>
-      {% if project.github_stars or project.pypi %}
-      <div class="project-badges">
-        {% if project.github_stars %}
-          <img src="https://img.shields.io/github/stars/{{ project.github_stars }}?style=flat-square&logo=github&label=stars" alt="GitHub Stars">
-        {% endif %}
-        {% if project.pypi %}
-          <img src="https://img.shields.io/pypi/dm/{{ project.pypi }}.svg?style=flat-square&logo=pypi&logoColor=white&label=downloads" alt="PyPI Downloads">
-        {% endif %}
-      </div>
+  <a href="{{ project.url | relative_url }}">
+    <div class="card hoverable">
+      {% if project.img %}
+        {% include figure.html
+          path=project.img
+          alt="project thumbnail" %}
       {% endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ project.title }}</h2>
+        <p class="card-text">{{ project.description }}</p>
+        <div class="card-footer-row">
+          {% if project.github_stars or project.pypi %}
+          <div class="project-badges">
+            {% if project.github_stars %}
+              <img src="https://img.shields.io/github/stars/{{ project.github_stars }}?style=flat-square&logo=github&label=stars" alt="GitHub Stars">
+            {% endif %}
+            {% if project.pypi %}
+              <img src="https://img.shields.io/pypi/dm/{{ project.pypi }}.svg?style=flat-square&logo=pypi&logoColor=white&label=downloads" alt="PyPI Downloads">
+            {% endif %}
+          </div>
+          {% endif %}
+          {% if project.github %}
+          <div class="project-github-link">
+            <a href="{{ project.github }}" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
     </div>
-  </div>
+  </a>
 </div>
