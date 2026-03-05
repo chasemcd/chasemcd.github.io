@@ -2,6 +2,7 @@
 layout: page
 title: MUG
 description: Multi-User Gymnasium — run Gymnasium and PettingZoo environments as browser-based multi-user experiments.
+img: assets/img/mug_logo.png
 github: https://github.com/chasemcd/mug
 github_stars: chasemcd/mug
 pypi: multi-user-gymnasium
