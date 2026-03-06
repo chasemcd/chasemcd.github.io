@@ -12,6 +12,7 @@ importance: 2
 **tl;dr** Multi-User Gymnasium (MUG) converts standard Gymnasium and PettingZoo environments into browser-based experiments, running Python-based environments directly in the browser and handling participant networking and AI inference. Core functionality includes:
 
 - Execution of pure-Python Gymnasium or PettingZoo environments directly in the browser via Pyodide with automatic data collection. Server-client architecture is available for non-pure-Python environments.
+- AI inference via `onnx.js` for running pre-trained models alongside Python environments. 
 - Multi-player matchmaking and experiments with generalized rollback netcode (GGPO) to account for network latency.
 - Full experiment flow with participant exclusion criteria, completion codes, static pages, surveys, and more.
 
@@ -97,6 +98,28 @@ Importantly, this only works with environments that are pure Python (or only rel
 
 ---
 
+#### AI Inference
+
+Alongside browser-based environment execution, MUG is also set up to handle AI inference for models trained in the corresponding environments. This allows us to run human-AI experiments without the need for server-based inference. When setting up an experiment, users specify how to map agent IDs in their environment to the entity that controls them: `Human` for human participants and `ModelConfig`s for AI models (which must be exported to ONNX). For example, in our Overcooked replication, we can specify that agent ID 0 is controlled by a human participant and agent ID 1 is controlled by an AI model that we've trained and exported to ONNX:
+
+```python
+policy_mapping = {
+  0: PolicyTypes.Human,
+  1: ModelConfig(
+    onnx_path="path/to/model.onnx",
+    # Extra inputs/outputs that allow us 
+    # to specify how the ONNX inference occurs. 
+    # See documentation for full details!
+    obs_input="obs",
+    logit_output="output",
+    state_inputs=["state_in_0", "state_in_1"],
+    state_outputs=["state_out_0", "state_out_1"],
+    state_shape=[1, 256],
+    fixed_inputs={"seq_lens": 1},
+)
+}
+```
+
 #### Multi-Player Functionality & Latency Handling
 
 Another major feature of MUG is the implementation of peer-to-peer networking and generalized rollback netcode. MUG offers configurable matchmaking in multi-player environments that allow us to group specific players together (e.g., first-in first-out matchmaking or filtering so we only allows groups to form that have connections below a latency threshold). However, despite this matchmaking it's still important that we have mechanisms to handle latency and ensure that all clients have the best experience possible. The naive approach to multi-player environments is to simply wait until we have inputs from all clients before advancing the environment---but if any client has a degraded connection or disconnection, it will cause stutter or freezing for all connected clients. 
@@ -115,7 +138,7 @@ In MUG, we provide a generalized implementation of GGPO that is automatically ac
 
 ---
 
-### Experiment Flow
+#### Experiment Flow
 
 Importantly, MUG supports a full experiment flow rather than just the ability to run experiments with simulation environments. This allows users to define customized pages, messages, randomization, etc. so that a full, proper experiment can be run entirely through MUG. 
 
