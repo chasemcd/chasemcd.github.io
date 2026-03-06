@@ -45,15 +45,21 @@ class MyEnv(pettingzoo.ParallelEnv):
     def render(self):
         assert self.render_mode == "mug"
 
+        # Add objects to the surface that we'll render
         self.surface.image(
-             id=obj.uuid,
-                x=x,
-                y=y,
-                w=width,
-                h=height,
+          id=obj.uuid,
+          x=x,
+          y=y,
+          w=width,
+          h=height,
+          image_name="my_image",
+          frame="image.png",
         )
         [...]
-        return surface
+
+        # Commiting the surface returns a dictionary of changes that occurred since the last commit (delta compression), and tells us what we need to render.
+        result = self.surface.commit().to_dict()
+        return result
 
 # Initialize an instance of the environment.
 # Pyodide will then access `env` to run the environment.
