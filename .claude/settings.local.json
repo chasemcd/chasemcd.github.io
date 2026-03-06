@@ -9,7 +9,8 @@
       "WebFetch(domain:pypi.org)",
       "Bash(pdflatex:*)",
       "Bash(dvisvgm:*)",
-      "Bash(inkscape:*)"
+      "Bash(inkscape:*)",
+      "Bash(ls:*)"
     ]
   }
 }

@@ -115,4 +115,50 @@ In MUG, we provide a generalized implementation of GGPO that is automatically ac
 
 Importantly, MUG supports a full experiment flow rather than just the ability to run experiments with simulation environments. This allows users to define customized pages, messages, randomization, etc. so that a full, proper experiment can be run entirely through MUG. 
 
-The experiment flow primarily relies on an experiment `Stager` and the `Scene` abstraction. A `Stager` dictates the flow of an experiment and `Scenes` represent the individual pages that a participant will see. Simulation environments are run through `GymScenes`, but there are many more options to set up an experiment (e.g., surveys, static pages, completion codes, etc.). 
+The experiment flow primarily relies on an experiment `Stager` and the `Scene` abstraction. A `Stager` dictates the flow of an experiment and `Scenes` represent the individual pages that a participant will see. Simulation environments are run through `GymScenes`, but there are many more options to set up an experiment (e.g., surveys, static pages, completion codes, etc.).
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/experiment_flow.svg" alt="Experiment flow diagram showing Stager with StartScene, GymScene, SurveyScene, and EndScene" style="max-width: 100%;">
+</div>
+
+
+This setup allows us to have a simple and configurable way to define experiments. We can also introduce other features around `Scenes` via `SceneWrapper`s. For example, adding randomization. Below is an example of how we launched an experiment with Overcooked, randomizing participants to two of five different layouts:
+
+```python
+stager = stager.Stager(
+    scenes=[
+        start_scene,  # welcome page with instructions
+        RandomizeOrder(
+            scenes=[
+                cramped_room_gym_scene,
+                counter_circuit_gym_scene,
+                forced_coordination_gym_scene,
+                asymmetric_advantages_gym_scene,
+                coordination_ring_gym_scene,
+            ],
+            keep_n=2,  # Randomly select two of the five layouts
+        ),
+        feedback_scene,  # a survey
+        end_scene,  # completion code for MTurk
+    ]
+)
+
+
+if __name__ == "__main__":
+    experiment_config = (
+        ExperimentConfig()
+        .experiment(
+          stager=stager, 
+          experiment_id="overcooked_test"
+        )
+        .hosting(port=5702, host="0.0.0.0")
+    )
+
+    app.run(experiment_config)
+```
+
+
+Each scene has a number of configurations and ways to customize them---any custom HTML can be inserted for any number of advanced features. 
+
+
+For all documentation and additional examples, see the [MUG documentation](https://multi-user-gymnasium.readthedocs.io/). 
