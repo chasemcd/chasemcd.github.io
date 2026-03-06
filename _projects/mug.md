@@ -75,8 +75,6 @@ class RemoteGame {
     async step(actions) {
         const pyActions = this.pyodide.toPy(actions);
 
-        this.pipelineMetrics.stepCallTimestamp = performance.now();
-
         const result = await this.pyodide.runPythonAsync(`
             obs, rewards, terminateds, truncateds, infos = env.step(${pyActions})
             render_state = env.render()
