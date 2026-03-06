@@ -9,3 +9,7 @@ importance: 3
 ---
 
 FootsiesGym is a multi-agent reinforcement learning benchmark built on the Footsies fighting game. It integrates with the Unity game engine via gRPC and provides a PettingZoo parallel-environment wrapper, making it compatible with standard multi-agent RL training pipelines.
+
+
+
+[details coming soon!]

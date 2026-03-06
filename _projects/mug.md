@@ -41,18 +41,61 @@ Users simply define how their Gymnasium- or PettingZoo-compatible environment sh
 
 ```python
 class MyEnv(pettingzoo.ParallelEnv):
+    # Persistent surface automatically applies delta compression
+    surface = Surface(width=WIDTH, height=HEIGHT)
+    
     def render(self):
         assert self.render_mode == "mug"
 
-        canvas = mug. 
+        self.surface.image(
+             id=obj.uuid,
+                x=x,
+                y=y,
+                w=width,
+                h=height,
+        )
+        [...]
+        return surface
 
+# Initialize an instance of the environment. 
+# Pyodide will then access `env` to run the environment.
 env = MyEnv(render_mode="mug")
 ```
 
+
+In JavaScript, we then run the environment using the Pyodide interface. Simplifying 
+quite a bit, we end up running something like this:
+
+```javascript
+class RemoteGame {
+    [...]
+    async step(actions) {
+        const pyActions = this.pyodide.toPy(actions);
+
+        this.pipelineMetrics.stepCallTimestamp = performance.now();
+
+        const result = await this.pyodide.runPythonAsync(`
+            obs, rewards, terminateds, truncateds, infos = env.step(${pyActions})
+            render_state = env.render()
+        `);
+        [...]
+    }
+}
+```
+
+Rendering is handled through [Phaser](https://phaser.io/), which we use as our front-end game engine. We translate the logic from `Env.render()` into Phaser commands to render the environment in the browser.
+
+In our example, we've set up a replication of Overcooked (see [the example script](https://github.com/chasemcd/mug/blob/mug/examples/cogrid/overcooked_human_ai.py)). We use the sprites from Carroll et al's original ][Overcooked-AI](https://github.com/HumanCompatibleAI/overcooked_ai) implementation. It ends up looking like this:
+
+![CoGrid's Overcooked running in the browser with Carroll et al.'s graphics.](/assets/gif/overcooked_in_browser.gif)
+
 #### Multi-Player Functionality & Latency Handling
 Multi-player matchmaking and experiments with generalized rollback netcode (GGPO) to account for network latency. 
+
+[details coming soon!]
 
 
 ### Experiment Flow
 Full experiment flow with participant exclusion criteria, completion codes, static pages, surveys, and more. 
 
+[details coming soon!]
