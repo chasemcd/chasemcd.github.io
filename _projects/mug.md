@@ -85,9 +85,11 @@ class RemoteGame {
 
 Rendering is handled through [Phaser](https://phaser.io/), which we use as our front-end game engine. We translate the logic from `Env.render()` into Phaser commands to render the environment in the browser.
 
-In our example, we've set up a replication of Overcooked (see [the example script](https://github.com/chasemcd/mug/blob/mug/examples/cogrid/overcooked_human_ai.py)). We use the sprites from Carroll et al's original ][Overcooked-AI](https://github.com/HumanCompatibleAI/overcooked_ai) implementation. It ends up looking like this:
+In our example, we've set up a replication of Overcooked (see [the example script](https://github.com/chasemcd/mug/blob/main/mug/examples/cogrid/overcooked_human_ai.py)). We use the sprites from Carroll et al's original[Overcooked-AI](https://github.com/HumanCompatibleAI/overcooked_ai) implementation. It ends up looking like this:
 
-![CoGrid's Overcooked running in the browser with Carroll et al.'s graphics.](/assets/gif/overcooked_in_browser.gif)
+<div style="text-align: center;">
+  <img src="/assets/gif/overcooked_in_browser.gif" alt="CoGrid's Overcooked running in the browser with Carroll et al.'s graphics." style="max-width: 100%;">
+</div>
 
 #### Multi-Player Functionality & Latency Handling
 Multi-player matchmaking and experiments with generalized rollback netcode (GGPO) to account for network latency. 
