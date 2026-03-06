@@ -92,9 +92,11 @@ In our example, we've set up a replication of Overcooked (see [the example scrip
 </div>
 
 #### Multi-Player Functionality & Latency Handling
-Multi-player matchmaking and experiments with generalized rollback netcode (GGPO) to account for network latency. 
+Multi-player matchmaking and experiments with generalized rollback netcode (GGPO) to account for network latency.
 
-[details coming soon!]
+<div style="text-align: center;">
+  <img src="/assets/img/rollback_diagram.svg" alt="Rollback netcode diagram" style="max-width: 100%;">
+</div>
 
 
 ### Experiment Flow
