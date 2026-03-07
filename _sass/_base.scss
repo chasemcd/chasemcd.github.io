@@ -58,6 +58,12 @@ blockquote {
   margin-left: 1rem;
   width: 100%;
 
+  figure, picture {
+    border-radius: 50%;
+    overflow: hidden;
+    background: transparent;
+  }
+
   img {
     border-radius: 50%;
   }
