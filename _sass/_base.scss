@@ -661,3 +661,46 @@ html.transition *:after {
   font-size: 0.875rem;
   padding-top: 0.25rem;
 }
+
+
+// Tabs
+
+.tabs {
+  margin-bottom: 1.5rem;
+
+  .tab-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-bottom: 2px solid var(--global-divider-color);
+  }
+
+  .tab-link {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--global-text-color-light);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    font-size: 0.9rem;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+
+    &.active {
+      color: var(--global-theme-color);
+      border-bottom-color: var(--global-theme-color);
+      font-weight: bold;
+    }
+  }
+
+  .tab-content {
+    display: none;
+    padding-top: 0.75rem;
+
+    &.active {
+      display: block;
+    }
+  }
+}

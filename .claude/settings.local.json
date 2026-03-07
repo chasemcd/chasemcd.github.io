@@ -10,7 +10,8 @@
       "Bash(pdflatex:*)",
       "Bash(dvisvgm:*)",
       "Bash(inkscape:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ]
   }
 }
