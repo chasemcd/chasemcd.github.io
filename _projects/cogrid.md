@@ -23,7 +23,7 @@ For full details, see the online documentation at [cogrid.readthedocs.io](https:
 
 **Installation**
 
-<div class="tabs" data-tab-group="install">
+<div class="tabs" data-tab-group="install" markdown="0">
   <ul class="tab-nav">
     <li class="tab-link active" data-tab="install-numpy">Basic (NumPy)</li>
     <li class="tab-link" data-tab="install-jax">With JAX</li>
@@ -40,7 +40,7 @@ For GPU support, install JAX with GPU acceleration as described in the [JAX inst
 
 **Quick Start**
 
-<div class="tabs" data-tab-group="backend">
+<div class="tabs" data-tab-group="backend" markdown="0">
   <ul class="tab-nav">
     <li class="tab-link active" data-tab="qs-numpy">NumPy</li>
     <li class="tab-link" data-tab="qs-jax">JAX</li>
