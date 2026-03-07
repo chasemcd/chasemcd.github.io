@@ -29,22 +29,14 @@ For full details, see the online documentation at [cogrid.readthedocs.io](https:
     <li class="tab-link" data-tab="install-jax">With JAX</li>
   </ul>
   <div class="tab-content active" id="install-numpy">
-
-```bash
-pip install cogrid
-```
-
+    <div class="highlight"><pre class="highlight"><code>pip install cogrid</code></pre></div>
   </div>
   <div class="tab-content" id="install-jax">
-
-```bash
-pip install cogrid[jax]
-```
-
+    <div class="highlight"><pre class="highlight"><code>pip install cogrid[jax]</code></pre></div>
   </div>
 </div>
 
-For GPU support, see the [JAX installation guide](https://jax.readthedocs.io/en/latest/installation.html).
+For GPU support, install JAX with GPU acceleration as described in the [JAX installation guide](https://jax.readthedocs.io/en/latest/installation.html).
 
 **Quick Start**
 
@@ -54,35 +46,27 @@ For GPU support, see the [JAX installation guide](https://jax.readthedocs.io/en/
     <li class="tab-link" data-tab="qs-jax">JAX</li>
   </ul>
   <div class="tab-content active" id="qs-numpy">
+    <div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">cogrid.envs</span> <span class="kn">import</span> <span class="n">registry</span>
+<span class="kn">import</span> <span class="nn">cogrid.envs.overcooked</span>
 
-```python
-from cogrid.envs import registry
-import cogrid.envs.overcooked
+<span class="n">env</span> <span class="o">=</span> <span class="n">registry</span><span class="p">.</span><span class="n">make</span><span class="p">(</span><span class="s">"Overcooked-CrampedRoom-V0"</span><span class="p">)</span>
+<span class="n">obs</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">env</span><span class="p">.</span><span class="n">reset</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 
-env = registry.make("Overcooked-CrampedRoom-V0")
-obs, info = env.reset(seed=42)  # obs: dict[str, ndarray]
-
-while env.agents:
-    actions = {a: env.action_space(a).sample() for a in env.agents}
-    obs, rewards, terminateds, truncateds, info = env.step(actions)
-```
-
+<span class="k">while</span> <span class="n">env</span><span class="p">.</span><span class="n">agents</span><span class="p">:</span>
+    <span class="n">actions</span> <span class="o">=</span> <span class="p">{</span><span class="n">a</span><span class="p">:</span> <span class="n">env</span><span class="p">.</span><span class="n">action_space</span><span class="p">(</span><span class="n">a</span><span class="p">).</span><span class="n">sample</span><span class="p">()</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">env</span><span class="p">.</span><span class="n">agents</span><span class="p">}</span>
+    <span class="n">obs</span><span class="p">,</span> <span class="n">rewards</span><span class="p">,</span> <span class="n">terminateds</span><span class="p">,</span> <span class="n">truncateds</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">env</span><span class="p">.</span><span class="n">step</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span></code></pre></div>
   </div>
   <div class="tab-content" id="qs-jax">
+    <div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">jax</span>
+<span class="kn">from</span> <span class="nn">cogrid.envs</span> <span class="kn">import</span> <span class="n">registry</span>
+<span class="kn">import</span> <span class="nn">cogrid.envs.overcooked</span>
 
-```python
-import jax
-from cogrid.envs import registry
-import cogrid.envs.overcooked
+<span class="n">env</span> <span class="o">=</span> <span class="n">registry</span><span class="p">.</span><span class="n">make</span><span class="p">(</span><span class="s">"Overcooked-CrampedRoom-V0"</span><span class="p">,</span> <span class="n">backend</span><span class="o">=</span><span class="s">"jax"</span><span class="p">)</span>
+<span class="n">env</span><span class="p">.</span><span class="n">reset</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># builds JIT-compiled functions</span>
 
-env = registry.make("Overcooked-CrampedRoom-V0", backend="jax")
-env.reset(seed=0)  # builds JIT-compiled functions
-
-obs, state, info = env.jax_reset(jax.random.key(0)) 
-actions = jax.numpy.array([0, 3], dtype=jax.numpy.int32)
-obs, state, rewards, terminateds, truncateds, info = env.jax_step(state, actions)
-```
-
+<span class="n">obs</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">env</span><span class="p">.</span><span class="n">jax_reset</span><span class="p">(</span><span class="n">jax</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">key</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">actions</span> <span class="o">=</span> <span class="n">jax</span><span class="p">.</span><span class="n">numpy</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">jax</span><span class="p">.</span><span class="n">numpy</span><span class="p">.</span><span class="n">int32</span><span class="p">)</span>
+<span class="n">obs</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">rewards</span><span class="p">,</span> <span class="n">terminateds</span><span class="p">,</span> <span class="n">truncateds</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">env</span><span class="p">.</span><span class="n">jax_step</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span></code></pre></div>
   </div>
 </div>
 
@@ -166,7 +150,7 @@ Finally, we benchmark the Overcooked environment against JaxMARL and the origina
   <img src="/assets/img/OvercookedSPS.png" alt="Overcooked Benchmarking" style="max-width: 100%;">
 </div>
 
-Environment throughput in the CoGrid Overcooked environment, comparing to the original Overcooked-AI and JaxMARL~\citep{flair2024jaxmarl} implementations as we increases the number of parallelized environments. The former has a constant rate of roughly 3,400 steps per second, while the latter scales from roughly 4,300 with a single instance to 2.9 million with 1,024 parallel instances. CoGrid's JAX-backed is competitive: scaling from 4,500 steps per second with a single instance to 5.6 million with 1,024 instances, leading to a 1.9x throughput improvement. CoGrid's NumPy backend is by far the slowest at roughly 450 steps per second; however, it offers a pure-Python mode that is entirely absent with JaxMARL. Hardware accelerated execution was run on a single NVIDIA aGeForce RTX 3090.
+Environment throughput in the CoGrid Overcooked environment, comparing to the original Overcooked-AI and JaxMARL implementations as we increases the number of parallelized environments. The former has a constant rate of roughly 3,400 steps per second, while the latter scales from roughly 4,300 with a single instance to 2.9 million with 1,024 parallel instances. CoGrid's JAX-backed is competitive: scaling from 4,500 steps per second with a single instance to 5.6 million with 1,024 instances, leading to a 1.9x throughput improvement. CoGrid's NumPy backend is by far the slowest at roughly 450 steps per second; however, it offers a pure-Python mode that is entirely absent with JaxMARL. Hardware accelerated execution was run on a single NVIDIA aGeForce RTX 3090.
 
 
 
