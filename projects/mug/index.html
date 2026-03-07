@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Chase  McDonald
+
+
+  | MUG
+
+</title>
+<meta name="description" content="Chase McDonald is a PhD student at Carnegie Mellon University.">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☆</text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="https://chasemcd.github.io/projects/mug/">
+
+
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="https://chasemcd.github.io/">
+       <span class="font-weight-bold">Chase</span>   McDonald
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item ">
+            <!-- <a class="nav-link" href="/blog/">
+              blog
+              
+            </a> -->
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            <div class="toggle-container">
+              <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    
+    <div class="project-page-logo">
+      <img src="/assets/img/mug_logo.png" alt="MUG logo">
+    </div>
+    
+    <h1 class="post-title">MUG <a href="https://github.com/chasemcd/mug" class="project-title-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+</h1>
+    <p class="post-description">Multi-User Gymnasium — run Gymnasium and PettingZoo environments directly in the browser for user experiments.</p>
+  </header>
+
+  <article>
+    <p><strong>tl;dr</strong> Multi-User Gymnasium (MUG) converts standard Gymnasium and PettingZoo environments into browser-based experiments, running Python-based environments directly in the browser and handling participant networking and AI inference. Core functionality includes:</p>
+
+<ul>
+  <li>Execution of pure-Python Gymnasium or PettingZoo environments directly in the browser via Pyodide with automatic data collection. Server-client architecture is available for non-pure-Python environments.</li>
+  <li>AI inference via <code class="language-plaintext highlighter-rouge">onnx.js</code> for running pre-trained models alongside Python environments.</li>
+  <li>Multi-player matchmaking and experiments with generalized rollback netcode (GGPO) to account for network latency.</li>
+  <li>Full experiment flow with participant exclusion criteria, completion codes, static pages, surveys, and more.</li>
+</ul>
+
+<p>Full documentation is available at <a href="https://multi-user-gymnasium.readthedocs.io" target="_blank" rel="noopener noreferrer">multi-user-gymnasium.readthedocs.io</a>.</p>
+
+<hr>
+
+<h2 id="context">Context</h2>
+
+<p>The development of MUG was inspired by a need I faced in graduate school: I needed to be able to run experiments with humans in the exact same environments that I train AI in. The major issue here is that most reinforcement learning environments are written in Python, aren’t configured to render in web browsers, and don’t have any mechanism to handle multi-player interactions (alongside all the other experiment boilerplate: data collection, experiment pipeline management, etc.).</p>
+
+<p>While there were some existing approaches to do something like this (e.g., <a href="https://hippogym.irll.net/" target="_blank" rel="noopener noreferrer">HIPPO-Gym</a> and <a href="https://github.com/Farama-Foundation/CrowdPlay" target="_blank" rel="noopener noreferrer">CrowdPlay</a>), nothing quite satisfied the requirements I had. This was particularly due to the fact that environments nearly always ran on a server, meaning that participants had to have an extremely low amount of latency to have a good experience. The one exception to this was the <a href="https://github.com/HumanCompatibleAI/overcooked_ai" target="_blank" rel="noopener noreferrer">Overcooked-AI</a> project, which provided an one-off implementation for their single environment: a reimplementation of Overcooked in JavaScript that ran entirely in the browser, with AI inference running through <code class="language-plaintext highlighter-rouge">TensorFlow.js</code>.</p>
+
+<p>Excited by this functionality—but frightened at the prospect of reimplementation in JavaScript—I searched for alternative ways to run exact replicas of Python environments in the browser. This led me to <a href="https://pyodide.org/" target="_blank" rel="noopener noreferrer">Pyodide</a>, a project that compiles CPython to WebAssembly, allowing Python code to run directly in the browser. MUG was initially built around Pyodide, esesntially providing a wrapper around the core reinforment learning loop and providing primitive rendering logic.</p>
+
+<p>After much trial-and-error in getting the setup correct and fully built out, MUG ended up being a platform with functionality well beyond its original purpose.</p>
+
+<hr>
+
+<h4 id="gymnasium-in-the-browser">Gymnasium in the Browser</h4>
+
+<p>The key innovation of MUG is the ability to run pure-Python environments in the browser, rather than relying on either a separate implementation or a server-client communication loop. This allows for true parity between the environments that are run for AI training and those that human participants interact with, while side-stepping latency issues that would otherwise be introduced by network communication.</p>
+
+<p>Users simply define how their Gymnasium- or PettingZoo-compatible environment should be initialized and rendered, and MUG handles the rest. Users provide initialization code and implement <code class="language-plaintext highlighter-rouge">render_mode="mug"</code> to render the environment in the browser:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">MyEnv</span><span class="p">(</span><span class="n">pettingzoo</span><span class="p">.</span><span class="n">ParallelEnv</span><span class="p">):</span>
+    <span class="c1"># Persistent surface automatically applies delta compression
+</span>    <span class="n">surface</span> <span class="o">=</span> <span class="n">Surface</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="n">WIDTH</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="n">HEIGHT</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="bp">self</span><span class="p">.</span><span class="n">render_mode</span> <span class="o">==</span> <span class="s">"mug"</span>
+
+        <span class="c1"># Add objects to the surface that we'll render
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">surface</span><span class="p">.</span><span class="n">image</span><span class="p">(</span>
+          <span class="nb">id</span><span class="o">=</span><span class="n">obj</span><span class="p">.</span><span class="n">uuid</span><span class="p">,</span>
+          <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span>
+          <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
+          <span class="n">w</span><span class="o">=</span><span class="n">width</span><span class="p">,</span>
+          <span class="n">h</span><span class="o">=</span><span class="n">height</span><span class="p">,</span>
+          <span class="n">image_name</span><span class="o">=</span><span class="s">"my_image"</span><span class="p">,</span>
+          <span class="n">frame</span><span class="o">=</span><span class="s">"image.png"</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="p">[...]</span>
+
+        <span class="c1"># Commiting the surface returns a dictionary of changes that occurred since the last commit (delta compression), and tells us what we need to render.
+</span>        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">surface</span><span class="p">.</span><span class="n">commit</span><span class="p">().</span><span class="n">to_dict</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+<span class="c1"># Initialize an instance of the environment.
+# Pyodide will then access `env` to run the environment.
+</span><span class="n">env</span> <span class="o">=</span> <span class="n">MyEnv</span><span class="p">(</span><span class="n">render_mode</span><span class="o">=</span><span class="s">"mug"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>In JavaScript, we then run the environment using the Pyodide interface. Simplifying
+quite a bit, we end up running something like this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">RemoteGame</span> <span class="p">{</span>
+    <span class="p">[...]</span>
+    <span class="k">async</span> <span class="nx">step</span><span class="p">(</span><span class="nx">actions</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">pyActions</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">pyodide</span><span class="p">.</span><span class="nx">toPy</span><span class="p">(</span><span class="nx">actions</span><span class="p">);</span>
+
+        <span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">pyodide</span><span class="p">.</span><span class="nx">runPythonAsync</span><span class="p">(</span><span class="s2">`
+            obs, rewards, terminateds, truncateds, infos = env.step(</span><span class="p">${</span><span class="nx">pyActions</span><span class="p">}</span><span class="s2">)
+            render_state = env.render()
+        `</span><span class="p">);</span>
+        <span class="p">[...]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Rendering is handled through <a href="https://phaser.io/" target="_blank" rel="noopener noreferrer">Phaser</a>, which we use as our front-end game engine. We translate the logic from <code class="language-plaintext highlighter-rouge">Env.render()</code> into Phaser commands to render the environment in the browser.</p>
+
+<p>In our example, we’ve set up a replication of Overcooked (see <a href="https://github.com/chasemcd/mug/blob/main/mug/examples/cogrid/overcooked_human_ai.py" target="_blank" rel="noopener noreferrer">the example script</a>). We use the sprites from Carroll et al’s original <a href="https://github.com/HumanCompatibleAI/overcooked_ai" target="_blank" rel="noopener noreferrer">Overcooked-AI</a> implementation. It ends up looking like this:</p>
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/gif/overcooked_in_browser.gif" alt="CoGrid's Overcooked running in the browser with Carroll et al.'s graphics." style="max-width: 100%;">
+</div>
+
+<p>Importantly, this only works with environments that are pure Python (or only rely on <a href="https://pyodide.org/en/stable/usage/packages-in-pyodide.html" target="_blank" rel="noopener noreferrer">packages built in Pyodide</a>). In cases where this isn’t the case, we support a fallback regime of a client-server architecture where the environment runs on the server and sends the rendering information to the client. This mode is drastically less robust to bad connections and is not as scalable as participants with poor connection to the server will have poor experiences in fast-paced tasks (e.g., &gt;15 frames per second).</p>
+
+<hr>
+
+<h4 id="ai-inference">AI Inference</h4>
+
+<p>Alongside browser-based environment execution, MUG is also set up to handle AI inference for models trained in the corresponding environments. This allows us to run human-AI experiments without the need for server-based inference. When setting up an experiment, users specify how to map agent IDs in their environment to the entity that controls them: <code class="language-plaintext highlighter-rouge">Human</code> for human participants and <code class="language-plaintext highlighter-rouge">ModelConfig</code>s for AI models (which must be exported to ONNX). For example, in our Overcooked replication, we can specify that agent ID 0 is controlled by a human participant and agent ID 1 is controlled by an AI model that we’ve trained and exported to ONNX:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">policy_mapping</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="mi">0</span><span class="p">:</span> <span class="n">PolicyTypes</span><span class="p">.</span><span class="n">Human</span><span class="p">,</span>
+  <span class="mi">1</span><span class="p">:</span> <span class="n">ModelConfig</span><span class="p">(</span>
+    <span class="n">onnx_path</span><span class="o">=</span><span class="s">"path/to/model.onnx"</span><span class="p">,</span>
+    <span class="c1"># Extra inputs/outputs that allow us 
+</span>    <span class="c1"># to specify how the ONNX inference occurs. 
+</span>    <span class="c1"># See documentation for full details!
+</span>    <span class="n">obs_input</span><span class="o">=</span><span class="s">"obs"</span><span class="p">,</span>
+    <span class="n">logit_output</span><span class="o">=</span><span class="s">"output"</span><span class="p">,</span>
+    <span class="n">state_inputs</span><span class="o">=</span><span class="p">[</span><span class="s">"state_in_0"</span><span class="p">,</span> <span class="s">"state_in_1"</span><span class="p">],</span>
+    <span class="n">state_outputs</span><span class="o">=</span><span class="p">[</span><span class="s">"state_out_0"</span><span class="p">,</span> <span class="s">"state_out_1"</span><span class="p">],</span>
+    <span class="n">state_shape</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">256</span><span class="p">],</span>
+    <span class="n">fixed_inputs</span><span class="o">=</span><span class="p">{</span><span class="s">"seq_lens"</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+<span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="multi-player-functionality--latency-handling">Multi-Player Functionality &amp; Latency Handling</h4>
+
+<p>Another major feature of MUG is the implementation of peer-to-peer networking and generalized rollback netcode. MUG offers configurable matchmaking in multi-player environments that allow us to group specific players together (e.g., first-in first-out matchmaking or filtering so we only allows groups to form that have connections below a latency threshold). However, despite this matchmaking it’s still important that we have mechanisms to handle latency and ensure that all clients have the best experience possible. The naive approach to multi-player environments is to simply wait until we have inputs from all clients before advancing the environment—but if any client has a degraded connection or disconnection, it will cause stutter or freezing for all connected clients.</p>
+
+<p>To remedy this, we draw on the extensive amount of work done in online video games. The specific approach we adopt is derived from <a href="https://www.ggpo.net/" target="_blank" rel="noopener noreferrer">Good Game, Peace Out</a> (GGPO). GGPO is an implementation of rollback netcode that fixes multi-player latency in an elegant and simple way: run the environment on each client and have it execute inputs as soon as the client selects them. If other clients’ inputs haven’t arrived, predict them (typically with a fixed default or by repeating the previous action). When the inputs do arrive, we do one of two things: (1) if the predicted input was correct continue execution or (2) if the predicted input was wrong, restore the state before the prediction and quickly restore the environment and replay the game with the correct inputs in the background and restore the environment to the correct state. This approach has been shown to be extremely effective and is used in fast-paced fighting games that rely heavily on precise execution in multi-player games (see the <a href="https://en.wikipedia.org/wiki/GGPO" target="_blank" rel="noopener noreferrer">Wikipedia article</a> for some examples).</p>
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/rollback_diagram.svg" alt="Rollback netcode diagram" style="max-width: 100%;">
+</div>
+
+<p>The above figure is an illustration of GGPO rollback netcode in a two-player environment. The main timeline shows the simulation state at each tick; each transition \(\mathcal{T}(s_t, a^1_t, a^2_t) \to s_{t+1}\) requires both players' actions. Client 1's actions (\(a^1\)) arrive on time at every tick. Client 2's action at \(t+1\) is delayed, so Client 1 predicts it (\(\hat{a}^2\)), producing a speculative state. When the delayed input arrives as a bundle \(a^2_{t:t+1}\) at \(t+1\) (green), the client rolls back to the last confirmed state \(s_t\) and re-simulates with the correct actions (green timeline), merging the corrected state back into the main timeline. Rollback occurs without rendering re-simulated frames and it takes place between rendered ticks, causing minimal visual disruption.</p>
+
+<p>In MUG, we provide a generalized implementation of GGPO that is automatically activated for multi-player experiments that are running in the browser. To set it up, users must have implemented <code class="language-plaintext highlighter-rouge">Env.get_state()</code> and <code class="language-plaintext highlighter-rouge">Env.set_state(state)</code> methods on their environment that allow full state serialization and restoration (and critically, environments must be deterministic given a fixed random seed).</p>
+
+<hr>
+
+<h4 id="experiment-flow">Experiment Flow</h4>
+
+<p>Importantly, MUG supports a full experiment flow rather than just the ability to run experiments with simulation environments. This allows users to define customized pages, messages, randomization, etc. so that a full, proper experiment can be run entirely through MUG.</p>
+
+<p>The experiment flow primarily relies on an experiment <code class="language-plaintext highlighter-rouge">Stager</code> and the <code class="language-plaintext highlighter-rouge">Scene</code> abstraction. A <code class="language-plaintext highlighter-rouge">Stager</code> dictates the flow of an experiment and <code class="language-plaintext highlighter-rouge">Scenes</code> represent the individual pages that a participant will see. Simulation environments are run through <code class="language-plaintext highlighter-rouge">GymScenes</code>, but there are many more options to set up an experiment (e.g., surveys, static pages, completion codes, etc.).</p>
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/assets/img/experiment_flow.svg" alt="Experiment flow diagram showing Stager with StartScene, GymScene, SurveyScene, and EndScene" style="max-width: 100%;">
+</div>
+
+<p>This setup allows us to have a simple and configurable way to define experiments. We can also introduce other features around <code class="language-plaintext highlighter-rouge">Scenes</code> via <code class="language-plaintext highlighter-rouge">SceneWrapper</code>s. For example, adding randomization. Below is an example of how we launched an experiment with Overcooked, randomizing participants to two of five different layouts:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">stager</span> <span class="o">=</span> <span class="n">stager</span><span class="p">.</span><span class="n">Stager</span><span class="p">(</span>
+    <span class="n">scenes</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">start_scene</span><span class="p">,</span>  <span class="c1"># welcome page with instructions
+</span>        <span class="n">RandomizeOrder</span><span class="p">(</span>
+            <span class="n">scenes</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">cramped_room_gym_scene</span><span class="p">,</span>
+                <span class="n">counter_circuit_gym_scene</span><span class="p">,</span>
+                <span class="n">forced_coordination_gym_scene</span><span class="p">,</span>
+                <span class="n">asymmetric_advantages_gym_scene</span><span class="p">,</span>
+                <span class="n">coordination_ring_gym_scene</span><span class="p">,</span>
+            <span class="p">],</span>
+            <span class="n">keep_n</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>  <span class="c1"># Randomly select two of the five layouts
+</span>        <span class="p">),</span>
+        <span class="n">feedback_scene</span><span class="p">,</span>  <span class="c1"># a survey
+</span>        <span class="n">end_scene</span><span class="p">,</span>  <span class="c1"># completion code for MTurk
+</span>    <span class="p">]</span>
+<span class="p">)</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">experiment_config</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">ExperimentConfig</span><span class="p">()</span>
+        <span class="p">.</span><span class="n">experiment</span><span class="p">(</span>
+          <span class="n">stager</span><span class="o">=</span><span class="n">stager</span><span class="p">,</span> 
+          <span class="n">experiment_id</span><span class="o">=</span><span class="s">"overcooked_test"</span>
+        <span class="p">)</span>
+        <span class="p">.</span><span class="n">hosting</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">5702</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s">"0.0.0.0"</span><span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">experiment_config</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Each scene has a number of configurations and ways to customize them—any custom HTML can be inserted for any number of advanced features.</p>
+
+<p>For all documentation and additional examples, see the <a href="https://multi-user-gymnasium.readthedocs.io/" target="_blank" rel="noopener noreferrer">MUG documentation</a>.</p>
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <!-- 
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2026 Chase  McDonald.
+    
+    
+    
+    Last updated: March 07, 2026.
+    
+  </div>
+</footer>
+ -->
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams',
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1Z24WLC5X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y1Z24WLC5X');
+</script>
+
+
+
+
+
+  <script src="/assets/js/tabs.js"></script>
+
+</html>
