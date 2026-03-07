@@ -10,6 +10,8 @@ importance: 3
 
 FootsiesGym is a multi-agent reinforcement learning benchmark built on [HiFight's Footsies](https://hifight.github.io/footsies/) fighting game. It serves as a benchmark environment for complex two-player zero-sum games executed in a real-world environment. 
 
+The environment was adopted by Ray's [RLlib](https://docs.ray.io/en/latest/rllib/index.html) as a testing environment and example [here](https://github.com/ray-project/ray/blob/master/rllib/examples/algorithms/ppo/multi_agent_footsies_ppo.py). 
+
 
 To get started, install the package with pip:
 
