@@ -6,7 +6,7 @@ description:  <tt>     chase c mcdonald [at] gmail [dot] com </tt>
 
 profile:
   align: right
-  image: circle_crop_beach.png
+  image: circle_crop_beach.jpg
   address: # address
 
 news: true  # includes a list of news items
