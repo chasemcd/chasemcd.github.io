@@ -2,7 +2,7 @@
 layout: page
 title: FootsiesGym
 description: A multi-agent RL benchmark environment based on the Footsies fighting game.
-img: assets/img/footsies_ko_blue.png
+img: assets/gif/footsies_trim.gif
 github: https://github.com/chasemcd/FootsiesGym
 github_stars: chasemcd/FootsiesGym
 importance: 3
