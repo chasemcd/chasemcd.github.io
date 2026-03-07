@@ -63,3 +63,10 @@ The action space for FootsiesGym is simple, but has one important configuation. 
 The `use_special_charge_action` adds an additional action to the action space: Special Charge. This toggles on a "holding" option, where every attack is converted to its charged variant. For example: if the agent selects `SPECIAL_CHARGE -> NO-OP -> BACK -> SPECIAL_CHARGE`, the agent will execute `ATTACK -> ATTACK -> BACK_ATTACK -> BACK` (the release of special charge reverts to the previous selected action, which is why the sequence ends with `BACK`).
 
 The observation space does not rely on the game pixels, but rather a featurized representation. The full feauture space definition can be seen via the [encoder implementation](https://github.com/chasemcd/FootsiesGym/blob/main/footsiesgym/footsies/encoder.py). Importantly, when the special charge action is enabled, we add a corresponding feature to the observation space.  
+
+
+#### Visualizing the Game
+
+We can easily update the configuration to run Footsies in headed mode, which will open a windowing showing the game as its played. Just as in headless mode, the corresponding binaries will be automatically downloaded and launched. 
+
+To run in headed mode to visualize policies, add `"headless": False,` to the configuration dictionary on environment initialization. 
